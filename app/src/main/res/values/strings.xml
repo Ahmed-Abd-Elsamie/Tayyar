@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tayyar</string>
+    <string name="spin">Select One</string>
+
+    <string-array name="spinnerItems">
+
+        <item>Restaurant</item>
+        <item>Electronics</item>
+        <item>Grocery</item>
+        <item>Pharmacy</item>
+
+    </string-array>
+
+</resources>

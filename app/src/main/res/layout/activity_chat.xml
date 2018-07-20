@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chat">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_message"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_message"
+            android:padding="10dp"
+            android:background="@drawable/input_design"
+            android:hint="Type a message..."
+            android:layout_weight="1"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:id="@+id/btn_send"
+            android:background="@drawable/btn_design"
+            android:textColor="#fff"
+            android:src="@drawable/ic_send"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:layout_marginRight="7dp"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

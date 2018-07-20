@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/inflate"
+        android:background="@drawable/bottom_design"
+
+
+        >
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="my Orders"
+            android:drawableTop="@drawable/ic_order_menu"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/btn_order"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="markets"
+            android:drawableTop="@drawable/ic_market_black"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/btn_market"
+            android:textColor="#000"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="my Account"
+            android:drawableTop="@drawable/ic_account_black"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/btn_account"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

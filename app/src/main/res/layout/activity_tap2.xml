@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/include"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                >
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+
+                    >
+
+                    <Button android:textColor="#ffffffff"
+                        android:background="#00ffffff"
+                        android:padding="10.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:drawableLeft="@drawable/ic_edit"
+                        android:id="@+id/btn_edit"
+
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/ic_person_white"
+                        android:id="@+id/btn_change_img"
+
+
+
+                        />
+
+                    <TextView
+                        android:textColor="#ffffffff"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user name"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txt_edit_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint="edit name"
+                    android:drawableLeft="@drawable/ic_txt_user"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/txt_edit_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint="edit email"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+                    />
+
+                <EditText
+                    android:id="@+id/txt_edit_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint="edit phone number"
+                    android:drawableLeft="@drawable/ic_phone_number"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="10.0dip"
+                    android:text="Gender"
+                    android:textSize="18.0dip" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="male"
+                        android:id="@+id/radio_male_profile"
+
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="female"
+                        android:id="@+id/radio_female_profile"
+
+                        />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ff000000" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="My alarms"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_alarm"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/alarm"
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="Change Language"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_language"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/language"
+
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="Share App"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/share"
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:text="Rules and Conditions"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/rules"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/sign_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="145dp"
+                    android:background="#00ffffff"
+                    android:onClick="signoutbutton"
+                    android:text="Sign out"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_out"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include" />
+
+
+</RelativeLayout>

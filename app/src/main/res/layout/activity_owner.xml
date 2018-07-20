@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                >
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0">
+
+
+                    <TextView
+                        android:textColor="#ffffffff"
+                        android:paddingLeft="5.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Setup Account"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/txt_full_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint="Full Name..."
+                    android:drawableLeft="@drawable/ic_txt_user"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+                    />
+
+                <EditText
+                    android:id="@+id/txt_full_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint="Email..."
+                    android:drawableLeft="@drawable/ic_email"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+                    />
+
+                <EditText
+                    android:id="@+id/txt_full_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:inputType="phone"
+                    android:hint="Phone Number..."
+                    android:drawableLeft="@drawable/ic_phone_number"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/txt_market_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:hint=" Shop Name..."
+                    android:drawableLeft="@drawable/ic_all_markets"
+                    android:padding="10dp"
+                    android:background="@drawable/input_design"
+
+                    />
+
+                <TextView
+                    android:textSize="18.0dip"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:text="Gender"
+                    android:textStyle="bold"
+                    />
+
+                <RadioGroup android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="male"
+                        android:layout_weight="1.0"
+                        android:id="@+id/radio_male"
+
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="female"
+                        android:layout_weight="1.0"
+                        android:id="@+id/radio_female"
+
+                        />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Type"
+                        android:layout_weight="1"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/spinner_shop_type"
+                        android:prompt="@string/spin"
+                        android:entries="@array/spinnerItems"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Image 1"
+                        android:layout_weight="10"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_select"
+                        android:id="@+id/market_img1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Image 2"
+                        android:layout_weight="10"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_shop_select"
+                        android:id="@+id/market_img2"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Select Location"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_location"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btn_select_location"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_marketplace"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn_design"
+                    android:textColor="#fff"
+                    android:id="@+id/btn_submit"
+                    android:layout_marginBottom="7dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Submiting means that you read reules and conditions"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
