@@ -1,5 +1,5 @@
 # Tayyar
-
+## Delivery App
 
 Delivery Android App that allow both , users and shop owners
 ,to create account user can search nearest and proper shops to him and ask for order.
